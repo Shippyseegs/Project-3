@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <title>Sign Up Form</title>
+	<link href = "css/style.css" rel = "stylesheet">
+	<link href = "css/noramlize.css" rel = "stylesheet">
+	<link href = "https://fonts.googleapis.com/css?family=Merriweather" rel='stylesheet'>
+  </head>
+  
+  <body>
+	<header><h1>THE CODE REVIEW</h1></header>
+	<div class = "container">
+		<form action = "/my_registration_form_page" method = "post">
+		<div class = "signup">
+		  <h2>Signup for our newsletter</h2>
+		  <p>Get the latest news on how your code is doing right in your inbox</p>
+		</div>
+		<hr>
+		<fieldset class = "contact">
+			<legend><h3>Contact Information</h3></legend>
+			<div>
+				<label for = "name">Full Name:</label>
+				<input type = "text" required id = "name" name = "user_name" placeholder = "Required">
+			</div>
+			<div>
+				<label for = "mail">Email:</label>
+				<input type = "email" required id = "mail" name = "user_email" placeholder = "Required">
+			</div>
+			<div>
+				<label for = "tell">Phone Number:</label>
+				<input type = "number" id = "tell" name = "user_tell">
+			</div>
+			<div>
+				<label for = "address">Street Address:</label>
+				<input type = "text" id = "address" name = "user_address">
+			</div>
+			<div>
+				<label for = "city">City:</label>
+				<input type = "text" id = "city" name = "user_city">
+			</div>
+			<div>
+				<label for = "state">State:</label>
+				<select id = "state" name = "state">
+					<option value = "select">Select below:</option>
+					<option value = "eastern_cape">Eastern Cape</option>
+					<option value = "western_cape">Western Cape</option>
+					<option value = "northern_cape">Northern Cape</option>
+					<option value = "gauteng">Gauteng</option>
+					<option value = "mpumalanga">Mpumalanga</option>
+					<option value = "kwazulu_natal">Kwazulu Natal</option>
+					<option value = "limpopo">Limpopo</option>
+					<option value = "free_state">Free State</option>
+					<option value = "north_west">North West</option>
+				</select>
+			</div>
+			<div>
+				<label for = "zip">Zip:</label>
+				<input type = "text" id = "zip" name = "user_zip">
+			</div>
+		</fieldset>	
+		
+		<fieldset class = "news">	
+			<h3>Newsletter</h3>
+			<h5>Select the newsletters you would like to receive</h5>
+			<ul>
+				<li>
+					<div>
+						<input type = "checkbox" id = "newsHTML" name = "html_news" value = "HTML">
+						<label class = "container" for = "newsHTML">HTML News<span class = "checkmark"></span></label>	
+					</div>
+				</li>	
+				<li>	
+					<div>
+						<input type = "checkbox" id = "newsCSS" name = "css_news" value = "CSS">
+						<label for = "newsCSS">CSS News<span class = "checkmark"></span></label>
+					</div>
+				</li>	
+				<li>	
+					<div>
+						<input type = "checkbox" id = "newsJAVASCRIPT" name = "javascript_news" value = "Javascript">
+						<label for = "newsJAVASCRIPT">Javascript News<span class = "checkmark"></span></label>
+					</div>
+				</li>	
+			</ul>
+			<h4>Newsletter format</h4>
+			<ul>
+				<li>
+					<div>
+						<input type = "radio" id = "formatHTML" name = "format" value = "HTML">
+						<label for = "formatHTML">HTML</label>
+					</div>
+				</li>
+				<li>
+					<div>
+						<input type = "radio" id = "formatTEXT" name = "format" value = "Text">
+						<label for = "formatTEXT">Plain Text</label>
+					</div>
+				</li>	
+			</ul>
+			<h5>Other topics you would like to hear about</h5>
+			<div>
+				<label for = "msg"></label>
+				<textarea id = "msg" name = "msg"></textarea>
+			</div>
+		</fieldset>	
+		
+			<div class = "button">
+				<button type = "submit">Sign Up</button>
+			</div>
+		</form>	
+	</div>
+	
+		<footer>
+			<h4>Copyright The Code Review</h4>
+		</footer>
+  </body>
+</html>
